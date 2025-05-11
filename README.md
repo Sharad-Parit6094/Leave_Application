@@ -1,1 +1,1 @@
-# Leave_Application
+# Leave Management Application
