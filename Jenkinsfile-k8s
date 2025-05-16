@@ -8,9 +8,9 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDS = credentials('docker-creds')
-        DOCKER_IMAGE = "kastrov/leave-management"
+        DOCKER_IMAGE = "sharad9642/leave-management"
         DOCKER_TAG = "${BUILD_NUMBER}"
-        EKS_CLUSTER = "kastro-eks"
+        EKS_CLUSTER = "sharad-eks"
         AWS_REGION = "us-east-1"
         K8S_NAMESPACE = "leave-management"
         MYSQL_WAIT_TIMEOUT = "300"
@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'master', url: 'https://github.com/KastroVKiran/leave-app-kastro.git'
+                git branch: 'master', url: 'https://github.com/Sharad-Parit6094/Leave_Application.git'
             }
         }
 
