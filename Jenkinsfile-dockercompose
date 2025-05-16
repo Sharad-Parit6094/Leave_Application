@@ -29,7 +29,7 @@ pipeline {
             steps {
                 sh '''
                 # Always fetch fresh wait-for-it.sh
-                wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O wait-for-it.sh
+                wget https://raw.githubusercontent.com/vishnubob/wait-for-it/main/wait-for-it.sh -O wait-for-it.sh
 
                 # Fix shebang to /usr/bin/env bash (portable)
                 sed -i '1s|^.*$|#!/usr/bin/env bash|' wait-for-it.sh
